@@ -203,6 +203,8 @@ header.sticky {
     background-color: transparent;
     border: none;
     font-size: 22px;
+    width: 50px;
+    justify-content: center;
 }
 
 .col-auto {
@@ -447,4 +449,88 @@ footer a {
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+/* responsive css */
+
+@media (max-width: 600px) {
+
+    footer .ft_info,
+    footer h5,
+    footer p,
+    footer ul,
+    .filter_cat {
+        text-align: center;
+    }
+
+    .filter_cat {
+        margin-bottom: 30px;
+    }
+
+    .ft_spacer {
+        height: 20px;
+    }
+
+    footer .social_icon ul {
+        justify-content: center;
+    }
+
+    .banner_content .title {
+        margin-bottom: 0;
+    }
+
+    .banner_content .subtitle {
+        font-size: 18px;
+    }
+
+    .col-auto {
+        margin-bottom: 15px;
+    }
+
+    .form-row {
+        background: transparent;
+        justify-content: center;
+    }
+
+    .input-group {
+        background: #fff;
+        border-radius: 8px;
+    }
+
+    .section_title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .meal_item {
+        display: block;
+    }
+
+    .meal_lists .meal_img img {
+        width: 100%;
+    }
+
+    .food_desc {
+        padding: 20px 20px 45px;
+        margin-bottom: 30px;
+        box-shadow: rgb(28 28 28 / 12%) 0px 0.4rem 1.8rem;
+    }
+
+    .food_details {
+        padding: 0;
+    }
+
+    .food_img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .sefaty_item img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .status {
+        padding: 15px 0;
+    }
 }
