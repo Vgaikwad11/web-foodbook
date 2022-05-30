@@ -502,7 +502,7 @@ footer a {
         margin-bottom: 30px;
     }
 
-    .meal_item {
+    .list .meal_item {
         display: block;
     }
 
@@ -510,10 +510,14 @@ footer a {
         width: 100%;
     }
 
-    .food_desc {
+    .detail_page .food_desc {
         padding: 20px 20px 45px;
         margin-bottom: 30px;
         box-shadow: rgb(28 28 28 / 12%) 0px 0.4rem 1.8rem;
+    }
+
+    .list .food_desc {
+        padding: 20px;
     }
 
     .food_details {
