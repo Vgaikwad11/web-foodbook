@@ -193,30 +193,28 @@ header.sticky {
 }
 
 /* banner search */
-.form-row {
-    background: #fff;
-    border-radius: 8px;
-    padding: 0 10px;
-}
 
 .input-group-text {
-    background-color: transparent;
+    background-color: #fff;
     border: none;
+    border-radius: 0;
     font-size: 22px;
-    width: 50px;
+}
+
+.form-row {
+    flex-wrap: nowrap;
+    background: #fff;
+    padding: 0 45px;
+    border-radius: 8px;
     justify-content: center;
 }
 
-.col-auto {
-    padding: 0 !important;
-    border-radius: 8px;
-}
+
 
 .col-auto .form-select {
-    width: 300px !important;
     height: 50px;
     border: none;
-    border-radius: 8px;
+    width: 250px;
 }
 
 .form-select:focus-visible {
@@ -329,7 +327,7 @@ footer a {
 
 .food_img img {
     height: 450px;
-    width: 450px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -453,7 +451,38 @@ footer a {
 
 /* responsive css */
 
-@media (max-width: 600px) {
+@media (max-width: 999px) {
+    .list .meal_item {
+        display: block;
+    }
+
+    .meal_lists .meal_img img {
+        width: 100%;
+    }
+
+    .detail_page .food_desc {
+        padding: 20px 20px 45px;
+        margin-bottom: 30px;
+        box-shadow: rgb(28 28 28 / 12%) 0px 0.4rem 1.8rem;
+    }
+
+    .list .food_desc {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 625px) {
+
+    .form-row {
+        display: block;
+        padding: 0;
+    }
+
+    .input-group-text {
+        width: 50px;
+        justify-content: center;
+    }
 
     footer .ft_info,
     footer h5,
@@ -485,6 +514,17 @@ footer a {
 
     .col-auto {
         margin-bottom: 15px;
+        padding: 0 30px;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .col-auto .form-select {
+        width: 88%;
+    }
+
+    .banner_content {
+        width: 80%;
     }
 
     .form-row {
@@ -492,33 +532,12 @@ footer a {
         justify-content: center;
     }
 
-    .input-group {
-        background: #fff;
-        border-radius: 8px;
-    }
-
     .section_title {
         text-align: center;
         margin-bottom: 30px;
     }
 
-    .list .meal_item {
-        display: block;
-    }
 
-    .meal_lists .meal_img img {
-        width: 100%;
-    }
-
-    .detail_page .food_desc {
-        padding: 20px 20px 45px;
-        margin-bottom: 30px;
-        box-shadow: rgb(28 28 28 / 12%) 0px 0.4rem 1.8rem;
-    }
-
-    .list .food_desc {
-        padding: 20px;
-    }
 
     .food_details {
         padding: 0;
@@ -536,5 +555,48 @@ footer a {
 
     .status {
         padding: 15px 0;
+    }
+
+    .banner {
+        height: 70vh;
+    }
+
+    .banner_content .title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 450px) {
+    .col-auto .form-select {
+        width: 82%;
+    }
+
+    .social_icon a {
+        font-size: 16px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .social_icon ul {
+        gap: 7px;
+    }
+
+    .safety_list {
+        flex-wrap: wrap;
+    }
+
+    .button_container a {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .col-auto .form-select {
+        width: 80%;
+    }
+
+    header .logo h1 {
+        font-size: 38px;
     }
 }
